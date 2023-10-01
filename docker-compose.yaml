@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:       
+  app:
+    image: app
+    ports:
+      - 7007:7007
+    container_name: app
+    restart: always
+    build:
+      context: .
+      dockerfile: ..\java-docker\Dockerfile
+   
+      

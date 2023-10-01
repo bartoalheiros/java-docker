@@ -14,6 +14,12 @@ public class PingController {
     @ResponseStatus(HttpStatus.OK)
     public void ping() {
         System.out.println("Tudo funcionando ok!");
-        System.out.println("Live reload não funciona.");
+        System.out.println("Teste Reload 7");
+    }
+    
+    @GetMapping(value = "/test")
+    @ResponseStatus(HttpStatus.OK)
+    public String test (){
+        return "Teste Spring!";
     }
 }
