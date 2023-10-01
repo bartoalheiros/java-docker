@@ -20,6 +20,6 @@ public class PingController {
     @GetMapping(value = "/test")
     @ResponseStatus(HttpStatus.OK)
     public String test (){
-        return "Teste Spring!";
+        return "Teste Spring Live Reload 5!";
     }
 }
